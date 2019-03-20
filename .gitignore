@@ -1,0 +1,6 @@
+node_modules/
+Public/index.old.html
+Public/index.js
+script/logo
+script/tiles
+ts/error.tsx

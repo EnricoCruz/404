@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo+Chettan');
+$error-font: 'Baloo Chettan', cursive;
+
+$brown: #423a22; // color font
+
+#wrapper
+{
+    height: 100vh;
+    #err-container
+    {
+        position: relative;
+        width: auto;
+        margin: auto;
+        min-height: 240px;
+        font-family: $error-font;
+        // display: inline-block;
+        overflow-x: hidden;
+
+
+        .bg-img
+        {
+            display: block;
+            margin: auto;
+            position: absolute;
+            z-index: -10;
+            left: -2%;
+            top: 0;
+            right: 0; bottom: 0;
+            width: 105%;
+            min-height: 100%;
+        }
+        #sky
+        {
+            display: block;
+            margin: auto;
+            position: relative;
+            z-index: -10;
+            left: 0;
+            top: 0;
+            right: 0; bottom: 0;
+            width: 101%;
+            height: auto;
+            overflow-x: hidden;
+        }
+        #boat-img
+        {
+            display: block;
+            position: absolute;
+            height: 20%; 
+            width: 10%; 
+            bottom: 20%;
+            right: 20%; // create at random point
+        }
+        #exclamation-img
+        {
+            display: block;
+            position: absolute;
+            height: 30%;
+            right: 15%;
+            top: 1%; //todo 
+            transform: rotateZ(25deg);
+        }
+        #palm-img
+        {
+            display: block;
+            position: absolute;
+            height: 60%;
+            left: 15%;
+            bottom: 10%;   
+        }
+        #sun-img
+        {
+            display: block;
+            position: absolute;
+            height: 22%;
+            left: 5%;
+            top: 3%;   
+        }
+    }
+
+    .err-dialog{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        // height: 70%;
+        transform: translate(-50%, -50%);
+        margin: auto;
+        text-align: center;
+        font-size: 1.5em;
+        color: $brown;
+        padding: 1em;
+        padding-top: 0;
+        border: 5px solid white;
+        background: rgba(white, .7);
+        border-radius: 10px;
+        hr{
+            border: 2px solid white;
+            width: 50%;
+        }
+        h2
+        {
+            margin: 0.3em;
+        }
+    }
+}
